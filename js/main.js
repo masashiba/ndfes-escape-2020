@@ -1,9 +1,9 @@
 $(function () {
   //模範解答群
   var correct_answers_set = [
-    ['google','GOOGLE','ｇｏｏｇｌｅ','ＧＯＯＧＬＥ'],
-    ['stayhome', 'stay home', 'STAYHOME', 'STAY HOME', 'ｓｔａｙｈｏｍｅ', 'ｓｔａｙ ｈｏｍｅ', 'ＳＴＡＹＨＯＭＥ', 'ＳＴＡＹ ＨＯＭＥ', 'stay　home', 'STAY　HOME', 'ｓｔａｙ　ｈｏｍｅ', 'ＳＴＡＹ　ＨＯＭＥ'],
-    ['vivid','VIVID','ｖｉｖｉｄ','']
+    ['google','GOOGLE','ｇｏｏｇｌｅ','ＧＯＯＧＬＥ','Google','Ｇｏｏｇｌｅ'],
+    ['stayhome', 'stay home', 'STAYHOME', 'STAY HOME', 'ｓｔａｙｈｏｍｅ', 'ｓｔａｙ ｈｏｍｅ', 'ＳＴＡＹＨＯＭＥ', 'ＳＴＡＹ ＨＯＭＥ', 'stay　home', 'STAY　HOME', 'ｓｔａｙ　ｈｏｍｅ', 'ＳＴＡＹ　ＨＯＭＥ', 'Stayhome', 'Stay home', 'StayHome', 'Stay Home', 'Ｓｔａｙｈｏｍｅ', 'Ｓｔａｙ　ｈｏｍｅ', 'ＳｔａｙＨｏｍｅ', 'Ｓｔａｙ　Ｈｏｍｅ', 'Ｓｔａｙ ｈｏｍｅ', 'Ｓｔａｙ Ｈｏｍｅ', 'Stay　home', 'Stay　Home'],
+    ['vivid','VIVID','ｖｉｖｉｄ','Vivid','Ｖｉｖｉｄ']
   ];
   //Answerって押したら
   $(".ansbutton").click(function () {
