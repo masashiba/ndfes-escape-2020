@@ -1,15 +1,9 @@
-@font-face {
-    font-family: '03SmartFontUI';
-    src: url('03SmartFontUI.eot');
-    src: url('03SmartFontUI.eot?iefix') format('eot'),
-         url('03SmartFontUI.woff') format('woff'),
-         url('03SmartFontUI.ttf') format('truetype'),
-         url('03SmartFontUI.svg#webfontjSpbZQRv') format('svg');
-}
-
 body {
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: #407C87;
   padding-bottom: 70px;
 }
@@ -21,7 +15,7 @@ body {
 
 .story {
   text-align: left;
-  margin-top: 60px;
+  margin: 60px 0 100px 0;
   width: 100%;
   border: solid 2px #FFFFF5;
   padding: 20px 30px;
@@ -87,7 +81,7 @@ img {
 }
 
 .ansbutton {
-  margin-top: 40px;
+  margin: 40px 0 100px 0;
   border: solid 2px #19171C;
   width: 30%;
   height: 60px;
@@ -144,4 +138,28 @@ button:active {
 
 .close-start {
   display: none;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #FFFFF5;
+  font-size: 40px;
+  font-family: "03SmartFontUI";
+}
+.separator::before,
+.separator::after {
+  content: '';
+  flex-grow: 1;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: dotted 3px #FFFFF5;
+}
+.separator::before {
+  margin-right: 30px;
+}
+.separator::after {
+  margin-left: 30px;
 }
