@@ -23,7 +23,7 @@ body {
 }
 
 .story p {
-  font-family: "03SmartFontUI";
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 19px;
   color: #FFFFF5;
   line-height: 35px;
@@ -53,7 +53,7 @@ img {
   color: #19171C;
   border-bottom: solid 3px #19171C;
   padding: 0;
-  font-family: "03SmartFontUI";
+  font-family: 'Rajdhani', sans-serif;
   transition: color 0.1s;
   margin-top: 70px;
 }
@@ -85,11 +85,15 @@ img {
   border: solid 2px #19171C;
   width: 30%;
   height: 60px;
-  font-size: 20px;
-  font-family: "03SmartFontUI";
+  font-size: 23px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
   background-color: #19171C;
   color: #407C87;
   transition: all 0.1s;
+  letter-spacing: 5px;
+  padding-top: 4px;
+  padding-left: 10px;
 }
 
 button:focus {
@@ -114,7 +118,8 @@ button:active {
   background-color: #19171C;
   font-size: 30px;
   height: 80px;
-  font-family: "03SmartFontUI";
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
   line-height: 80px;
   transition: all 0.2s;
 }
@@ -130,7 +135,7 @@ button:active {
 
 .hint-content {
   display: none;
-  font-family: "03SmartFontUI";
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 50px 0;
   border: solid 2px #19171C;
   font-size: 30px;
@@ -147,7 +152,8 @@ button:active {
   justify-content: center;
   color: #FFFFF5;
   font-size: 40px;
-  font-family: "03SmartFontUI";
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
 }
 .separator::before,
 .separator::after {
