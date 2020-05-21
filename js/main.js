@@ -1,9 +1,9 @@
 $(function () {
   //模範解答群
   var correct_answers_set = [
-    ['google','GOOGLE','ｇｏｏｇｌｅ','ＧＯＯＧＬＥ','Google','Ｇｏｏｇｌｅ'],
-    ['stayhome', 'stay home', 'STAYHOME', 'STAY HOME', 'ｓｔａｙｈｏｍｅ', 'ｓｔａｙ ｈｏｍｅ', 'ＳＴＡＹＨＯＭＥ', 'ＳＴＡＹ ＨＯＭＥ', 'stay　home', 'STAY　HOME', 'ｓｔａｙ　ｈｏｍｅ', 'ＳＴＡＹ　ＨＯＭＥ', 'Stayhome', 'Stay home', 'StayHome', 'Stay Home', 'Ｓｔａｙｈｏｍｅ', 'Ｓｔａｙ　ｈｏｍｅ', 'ＳｔａｙＨｏｍｅ', 'Ｓｔａｙ　Ｈｏｍｅ', 'Ｓｔａｙ ｈｏｍｅ', 'Ｓｔａｙ Ｈｏｍｅ', 'Stay　home', 'Stay　Home'],
-    ['vivid','VIVID','ｖｉｖｉｄ','Vivid','Ｖｉｖｉｄ']
+    ['google','GOOGLE','ｇｏｏｇｌｅ','ＧＯＯＧＬＥ','Google','Ｇｏｏｇｌｅ','グーグル','ぐーぐる'],
+    ['stayhome', 'stay home', 'STAYHOME', 'STAY HOME', 'ｓｔａｙｈｏｍｅ', 'ｓｔａｙ ｈｏｍｅ', 'ＳＴＡＹＨＯＭＥ', 'ＳＴＡＹ ＨＯＭＥ', 'stay　home', 'STAY　HOME', 'ｓｔａｙ　ｈｏｍｅ', 'ＳＴＡＹ　ＨＯＭＥ', 'Stayhome', 'Stay home', 'StayHome', 'Stay Home', 'Ｓｔａｙｈｏｍｅ', 'Ｓｔａｙ　ｈｏｍｅ', 'ＳｔａｙＨｏｍｅ', 'Ｓｔａｙ　Ｈｏｍｅ', 'Ｓｔａｙ ｈｏｍｅ', 'Ｓｔａｙ Ｈｏｍｅ', 'Stay　home', 'Stay　Home','すていほーむ','ステイホーム'],
+    ['vivid', 'VIVID', 'ｖｉｖｉｄ', 'Vivid', 'Ｖｉｖｉｄ','ビビッド','びびっど']
   ];
   //Answerって押したら
   $(".ansbutton").click(function () {
@@ -39,10 +39,10 @@ $(function () {
   //アコーディオン実装
   $(".hint-header").click(function () {
     if ($(this).hasClass('open')) {
-      $(this).next(".hint-content").slideUp();
+      $(this).next(".slider").slideUp();
       $(this).removeClass("open");
     } else {
-      $(this).next(".hint-content").slideDown();
+      $(this).next(".slider").slideDown();
       $(this).addClass("open");
     }
   });

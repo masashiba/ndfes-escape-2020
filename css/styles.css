@@ -31,7 +31,7 @@ body {
 
 .q-img {
   width: 100%;
-  background-color: #FFFFF5;
+  background-color: rgba(2,2,2,0);
   margin: 50px 0;
   padding: 30px 0;
 }
@@ -78,6 +78,10 @@ img {
 
 .ansinput:focus + .underline {
   transform: scaleX(1);
+}
+
+.buttonwrapper {
+  text-align: center;
 }
 
 .ansbutton {
@@ -133,12 +137,31 @@ button:active {
   opacity: 0.8;
 }
 
-.hint-content {
+.slider {
   display: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  padding: 50px 0;
   border: solid 2px #19171C;
-  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+.hint-content p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 26px;
+}
+
+.first-hint-content {
+  margin: 50px 0 80px 0;
+}
+
+.slider .hint-header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider .slider {
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 0;
 }
 
 .close-start {
